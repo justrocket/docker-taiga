@@ -7,8 +7,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV NGINX_VERSION 1.15.5-1~stretch
 
 RUN apt-key adv \
-  --keyserver hkp://pgp.mit.edu:80 \
-  --recv-keys 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62
+  --keyserver keyserver.ubuntu.com \
+  --recv-keys ABF5BD827BD9BF62
 
 RUN echo "deb http://nginx.org/packages/mainline/debian/ stretch nginx" >> /etc/apt/sources.list
 
